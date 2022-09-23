@@ -11,6 +11,7 @@ namespace WindowsFormsApp1
         public string Name;
         public int Hunger;
         private int Weight;
+        public Inventory inventory = new Inventory();
         public int Energy = 100;
         public string Sprite;
         public string Meowsound;

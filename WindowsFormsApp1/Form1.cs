@@ -122,5 +122,11 @@ namespace WindowsFormsApp1
             Cat.UpdateStatus();
             UpdatePenis();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            InventoryForm inventoryform = new InventoryForm();
+            inventoryform.Show();
+        }
     }
 }
