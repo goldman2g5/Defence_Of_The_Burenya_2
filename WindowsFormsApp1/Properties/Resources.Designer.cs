@@ -143,6 +143,16 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap NecoArcBG {
+            get {
+                object obj = ResourceManager.GetObject("NecoArcBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NecoArcGif {
             get {
                 object obj = ResourceManager.GetObject("NecoArcGif", resourceCulture);
@@ -166,6 +176,26 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap Settings {
             get {
                 object obj = ResourceManager.GetObject("Settings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap snoop {
+            get {
+                object obj = ResourceManager.GetObject("snoop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Space {
+            get {
+                object obj = ResourceManager.GetObject("Space", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

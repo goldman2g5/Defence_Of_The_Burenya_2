@@ -16,6 +16,7 @@ namespace WindowsFormsApp1.Misc
         {
             { "MainMenu", new MainMenuForm()},
             { "Settings", new SettingsForm()},
+            { "Introduction", new DiologScene()},
         };
         private static Form NowOnScreen;
 

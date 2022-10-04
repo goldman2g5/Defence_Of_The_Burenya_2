@@ -19,9 +19,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             new Cat("Neco Arc", 100, @"C:/Users/mi/source/repos/WindowsFormsApp1/necoarc.jpg", @"C:/Users/mi/source/repos/WindowsFormsApp1/neco-arc-sound-effect.wav");
-            new Cat("Neco Arc Chaos", 100, @"C:/Users/mi/source/repos/WindowsFormsApp1/nekoarcchaos.jpg", @"C:/Users/mi/source/repos/WindowsFormsApp1/doridori.wav"); 
-            foreach (var i in Cat.CatLs)
-                listView1.Items.Add(i.ToString());
+            new Cat("Neco Arc Chaos", 100, @"C:/Users/mi/source/repos/WindowsFormsApp1/nekoarcchaos.jpg", @"C:/Users/mi/source/repos/WindowsFormsApp1/doridori.wav");
+            //foreach (var i in Cat.CatLs)
+            //    listView1.Items.Add(i.ToString());
+            Hide();
             FormsHandler.Show("MainMenu");
         }
 

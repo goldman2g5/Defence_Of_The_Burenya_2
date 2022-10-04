@@ -45,5 +45,10 @@ namespace WindowsFormsApp1.Misc
             
         }
 
+        public static void PlayRandom()
+        {
+
+        }
+
     }
 }

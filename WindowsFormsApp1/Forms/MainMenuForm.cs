@@ -23,6 +23,7 @@ namespace WindowsFormsApp1
             BGpictureBox.Controls.Add(LoadButton);
             BGpictureBox.Controls.Add(SettingsButton);
             BGpictureBox.Controls.Add(ExitButton);
+            BGpictureBox.Controls.Add(SnoopDog);
             SoundHandler.PlayBG("MainMenuBGMusic");
         }
 
@@ -47,6 +48,8 @@ namespace WindowsFormsApp1
         private void NewGameButton_Click(object sender, EventArgs e)
         {
             SoundHandler.Play("Neco-ÑA");
+            FormsHandler.Show("Introduction");
+            
         }
 
         private void LoadButton_Click(object sender, EventArgs e)
