@@ -21,6 +21,7 @@ namespace WindowsFormsApp1
             new Cat("Neco Arc Chaos", 100, @"C:/Users/mi/source/repos/WindowsFormsApp1/nekoarcchaos.jpg", @"C:/Users/mi/source/repos/WindowsFormsApp1/doridori.wav"); 
             foreach (var i in Cat.CatLs)
                 listView1.Items.Add(i.ToString());
+            new MainMenuForm().Show();
         }
 
 

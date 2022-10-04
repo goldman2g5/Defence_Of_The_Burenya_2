@@ -50,6 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cat.cs" />
+    <Compile Include="MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventory.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Form1.cs">
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryForm.resx">
       <DependentUpon>InventoryForm.cs</DependentUpon>
@@ -102,7 +111,17 @@
     <Content Include="nekoarcicon.ico" />
     <None Include="Resources\weaponsloticon.png" />
     <None Include="Resources\weaponsloticon1.png" />
+    <None Include="Resources\MainMenu\Logo.png" />
+    <None Include="Resources\MainMenu\NecoArcGif.gif" />
+    <None Include="Resources\MainMenu\BackGround.gif" />
+    <None Include="Resources\MainMenu\NewGame.png" />
+    <None Include="Resources\MainMenu\Settings.png" />
+    <None Include="Resources\MainMenu\Logo2.gif" />
+    <None Include="Resources\MainMenu\Logo3.gif" />
+    <None Include="Resources\MainMenu\Load.png" />
+    <None Include="Resources\MainMenu\Exit.png" />
     <Content Include="TextTemplate.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
