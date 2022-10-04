@@ -25,7 +25,9 @@ namespace WindowsFormsApp1.Misc
             if (NowOnScreen != null)
                 NowOnScreen.Hide();
             Form formToShow;
-            FormsDict.TryGetValue(name , out formToShow);
+            FormsDict.TryGetValue(name, out formToShow);
+            if (NowOnScreen != null)
+                formToShow.Location = NowOnScreen.Location;
             formToShow.Show();
             NowOnScreen = formToShow;
         }

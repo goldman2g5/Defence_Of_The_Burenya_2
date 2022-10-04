@@ -43,6 +43,9 @@
       <HintPath>..\packages\WMPLib.1.0.0\lib\Interop.WMPLib.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Siticone.Desktop.UI, Version=2.0.9.0, Culture=neutral, PublicKeyToken=422d444a8a9fa6db, processorArchitecture=MSIL">
+      <HintPath>..\packages\Siticone.Desktop.UI.2.0.9\lib\net40\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -130,6 +133,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="nekoarcicon.ico" />
+    <None Include="Resources\Music.png" />
+    <None Include="Resources\MainMenu\EffectsVolume.png" />
+    <None Include="Resources\Shared\BackButton.png" />
     <Content Include="TODO.txt" />
     <None Include="Resources\weaponsloticon.png" />
     <None Include="Resources\weaponsloticon1.png" />

@@ -16,14 +16,22 @@ namespace WindowsFormsApp1.Forms
         public SettingsForm()
         {
             InitializeComponent();
-        }
 
-        private void button1_Click(object sender, EventArgs e) => FormsHandler.Show("MainMenu");
+            BGpictureBox.Controls.Add(VolumepictureBox1);
+            BGpictureBox.Controls.Add(EffectsTrackBar);
+            BGpictureBox.Controls.Add(EffectspictureBox);
+            BGpictureBox.Controls.Add(EffectsTrackBar);
+            BGpictureBox.Controls.Add(MusicTrackBar);
+            BGpictureBox.Controls.Add(BackButton);
+            
+        }
+        private void BackButton_Click(object sender, EventArgs e) => FormsHandler.Show("MainMenu");
 
         private void SettingsForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
             e.Cancel = true;
         }
+
     }
 }

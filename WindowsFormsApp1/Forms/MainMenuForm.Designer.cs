@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenuForm));
-            this.ExitpictureBox = new System.Windows.Forms.PictureBox();
             this.SettingspictureBox = new System.Windows.Forms.PictureBox();
             this.LoadpictureBox = new System.Windows.Forms.PictureBox();
             this.NewGamepictureBox = new System.Windows.Forms.PictureBox();
             this.LogopictureBox = new System.Windows.Forms.PictureBox();
             this.NecoArcGifpictureBox = new System.Windows.Forms.PictureBox();
             this.BGpictureBox = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.ExitpictureBox)).BeginInit();
+            this.ExitButton = new Siticone.Desktop.UI.WinForms.SiticoneImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.SettingspictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LoadpictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NewGamepictureBox)).BeginInit();
@@ -44,17 +43,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NecoArcGifpictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BGpictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ExitpictureBox
-            // 
-            this.ExitpictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.ExitpictureBox.Image = global::WindowsFormsApp1.Properties.Resources.Exit;
-            this.ExitpictureBox.Location = new System.Drawing.Point(903, 367);
-            this.ExitpictureBox.Name = "ExitpictureBox";
-            this.ExitpictureBox.Size = new System.Drawing.Size(347, 65);
-            this.ExitpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ExitpictureBox.TabIndex = 6;
-            this.ExitpictureBox.TabStop = false;
             // 
             // SettingspictureBox
             // 
@@ -115,12 +103,31 @@
             // BGpictureBox
             // 
             this.BGpictureBox.Image = global::WindowsFormsApp1.Properties.Resources.BackGround;
-            this.BGpictureBox.Location = new System.Drawing.Point(-1, 0);
+            this.BGpictureBox.Location = new System.Drawing.Point(0, 0);
             this.BGpictureBox.Name = "BGpictureBox";
-            this.BGpictureBox.Size = new System.Drawing.Size(1262, 673);
+            this.BGpictureBox.Size = new System.Drawing.Size(1280, 720);
             this.BGpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BGpictureBox.TabIndex = 0;
             this.BGpictureBox.TabStop = false;
+            // 
+            // ExitButton
+            // 
+            this.ExitButton.BackColor = System.Drawing.Color.Transparent;
+            this.ExitButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ExitButton.CheckedState.Parent = this.ExitButton;
+            this.ExitButton.HoverState.ImageSize = new System.Drawing.Size(192, 58);
+            this.ExitButton.HoverState.Parent = this.ExitButton;
+            this.ExitButton.Image = global::WindowsFormsApp1.Properties.Resources.Exit;
+            this.ExitButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ExitButton.ImageRotate = 0F;
+            this.ExitButton.ImageSize = new System.Drawing.Size(241, 73);
+            this.ExitButton.Location = new System.Drawing.Point(903, 367);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ExitButton.PressedState.Parent = this.ExitButton;
+            this.ExitButton.ShadowDecoration.Parent = this.ExitButton;
+            this.ExitButton.Size = new System.Drawing.Size(347, 78);
+            this.ExitButton.TabIndex = 6;
             // 
             // MainMenuForm
             // 
@@ -129,7 +136,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.ControlBox = false;
-            this.Controls.Add(this.ExitpictureBox);
+            this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.SettingspictureBox);
             this.Controls.Add(this.LoadpictureBox);
             this.Controls.Add(this.NewGamepictureBox);
@@ -140,7 +147,6 @@
             this.Name = "MainMenuForm";
             this.Text = "Defence Of The Burenya 2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainMenuForm_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.ExitpictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SettingspictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LoadpictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NewGamepictureBox)).EndInit();
@@ -155,10 +161,10 @@
 
         private System.Windows.Forms.PictureBox BGpictureBox;
         private System.Windows.Forms.PictureBox NecoArcGifpictureBox;
-        private System.Windows.Forms.PictureBox ExitpictureBox;
         private System.Windows.Forms.PictureBox SettingspictureBox;
         private System.Windows.Forms.PictureBox LoadpictureBox;
         private System.Windows.Forms.PictureBox NewGamepictureBox;
         private System.Windows.Forms.PictureBox LogopictureBox;
+        private Siticone.Desktop.UI.WinForms.SiticoneImageButton ExitButton;
     }
 }

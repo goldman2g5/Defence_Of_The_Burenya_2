@@ -63,9 +63,29 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BackButton {
+            get {
+                object obj = ResourceManager.GetObject("BackButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BackGround {
             get {
                 object obj = ResourceManager.GetObject("BackGround", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EffectsVolume {
+            get {
+                object obj = ResourceManager.GetObject("EffectsVolume", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,19 +123,9 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Logo2 {
+        internal static System.Drawing.Bitmap Music {
             get {
-                object obj = ResourceManager.GetObject("Logo2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Logo3 {
-            get {
-                object obj = ResourceManager.GetObject("Logo3", resourceCulture);
+                object obj = ResourceManager.GetObject("Music", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

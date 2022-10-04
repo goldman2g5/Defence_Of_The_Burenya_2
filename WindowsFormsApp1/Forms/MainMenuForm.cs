@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
             BGpictureBox.Controls.Add(NewGamepictureBox);
             BGpictureBox.Controls.Add(LoadpictureBox);
             BGpictureBox.Controls.Add(SettingspictureBox);
-            BGpictureBox.Controls.Add(ExitpictureBox);
+            BGpictureBox.Controls.Add(ExitButton);
             SoundHandler.playBG("MainMenuBGMusic");
         }
 
