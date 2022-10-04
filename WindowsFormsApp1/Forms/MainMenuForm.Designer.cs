@@ -29,42 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenuForm));
-            this.NecoArcGifpictureBox = new System.Windows.Forms.PictureBox();
-            this.BGpictureBox = new System.Windows.Forms.PictureBox();
             this.ExitpictureBox = new System.Windows.Forms.PictureBox();
             this.SettingspictureBox = new System.Windows.Forms.PictureBox();
             this.LoadpictureBox = new System.Windows.Forms.PictureBox();
             this.NewGamepictureBox = new System.Windows.Forms.PictureBox();
             this.LogopictureBox = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.NecoArcGifpictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BGpictureBox)).BeginInit();
+            this.NecoArcGifpictureBox = new System.Windows.Forms.PictureBox();
+            this.BGpictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ExitpictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SettingspictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LoadpictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NewGamepictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogopictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NecoArcGifpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BGpictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // NecoArcGifpictureBox
-            // 
-            this.NecoArcGifpictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.NecoArcGifpictureBox.Image = global::WindowsFormsApp1.Properties.Resources.NecoArcGif;
-            this.NecoArcGifpictureBox.Location = new System.Drawing.Point(-1, 444);
-            this.NecoArcGifpictureBox.Name = "NecoArcGifpictureBox";
-            this.NecoArcGifpictureBox.Size = new System.Drawing.Size(297, 229);
-            this.NecoArcGifpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.NecoArcGifpictureBox.TabIndex = 1;
-            this.NecoArcGifpictureBox.TabStop = false;
-            // 
-            // BGpictureBox
-            // 
-            this.BGpictureBox.Image = global::WindowsFormsApp1.Properties.Resources.BackGround;
-            this.BGpictureBox.Location = new System.Drawing.Point(-1, 0);
-            this.BGpictureBox.Name = "BGpictureBox";
-            this.BGpictureBox.Size = new System.Drawing.Size(1262, 673);
-            this.BGpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BGpictureBox.TabIndex = 0;
-            this.BGpictureBox.TabStop = false;
             // 
             // ExitpictureBox
             // 
@@ -87,6 +66,7 @@
             this.SettingspictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SettingspictureBox.TabIndex = 5;
             this.SettingspictureBox.TabStop = false;
+            this.SettingspictureBox.Click += new System.EventHandler(this.SettingspictureBox_Click);
             // 
             // LoadpictureBox
             // 
@@ -121,6 +101,27 @@
             this.LogopictureBox.TabIndex = 2;
             this.LogopictureBox.TabStop = false;
             // 
+            // NecoArcGifpictureBox
+            // 
+            this.NecoArcGifpictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.NecoArcGifpictureBox.Image = global::WindowsFormsApp1.Properties.Resources.NecoArcGif;
+            this.NecoArcGifpictureBox.Location = new System.Drawing.Point(-1, 444);
+            this.NecoArcGifpictureBox.Name = "NecoArcGifpictureBox";
+            this.NecoArcGifpictureBox.Size = new System.Drawing.Size(297, 229);
+            this.NecoArcGifpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.NecoArcGifpictureBox.TabIndex = 1;
+            this.NecoArcGifpictureBox.TabStop = false;
+            // 
+            // BGpictureBox
+            // 
+            this.BGpictureBox.Image = global::WindowsFormsApp1.Properties.Resources.BackGround;
+            this.BGpictureBox.Location = new System.Drawing.Point(-1, 0);
+            this.BGpictureBox.Name = "BGpictureBox";
+            this.BGpictureBox.Size = new System.Drawing.Size(1262, 673);
+            this.BGpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BGpictureBox.TabIndex = 0;
+            this.BGpictureBox.TabStop = false;
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -138,13 +139,14 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainMenuForm";
             this.Text = "Defence Of The Burenya 2";
-            ((System.ComponentModel.ISupportInitialize)(this.NecoArcGifpictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BGpictureBox)).EndInit();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainMenuForm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.ExitpictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SettingspictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LoadpictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NewGamepictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogopictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NecoArcGifpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BGpictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }

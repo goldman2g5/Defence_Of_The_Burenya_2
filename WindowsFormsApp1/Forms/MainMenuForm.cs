@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Forms;
+using WindowsFormsApp1.Misc;
 
 namespace WindowsFormsApp1
 {
@@ -21,9 +23,15 @@ namespace WindowsFormsApp1
             BGpictureBox.Controls.Add(LoadpictureBox);
             BGpictureBox.Controls.Add(SettingspictureBox);
             BGpictureBox.Controls.Add(ExitpictureBox);
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-            player.SoundLocation = "C:/Users/bebra/Source/Repos/Defence_Of_The_Burenya_2/WindowsFormsApp1/Resources/MainMenu/bgmusic.wav";
-            player.PlayLooping();
+            SoundHandler.playBG("MainMenuBGMusic");
+        }
+
+        private void SettingspictureBox_Click(object sender, EventArgs e) => FormsHandler.Show("Settings");
+
+        private void MainMenuForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            e.Cancel = true;
         }
     }
 }
