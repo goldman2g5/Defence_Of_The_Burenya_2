@@ -29,54 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenuForm));
-            this.SettingspictureBox = new System.Windows.Forms.PictureBox();
-            this.LoadpictureBox = new System.Windows.Forms.PictureBox();
-            this.NewGamepictureBox = new System.Windows.Forms.PictureBox();
             this.LogopictureBox = new System.Windows.Forms.PictureBox();
             this.NecoArcGifpictureBox = new System.Windows.Forms.PictureBox();
             this.BGpictureBox = new System.Windows.Forms.PictureBox();
             this.ExitButton = new Siticone.Desktop.UI.WinForms.SiticoneImageButton();
-            ((System.ComponentModel.ISupportInitialize)(this.SettingspictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LoadpictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NewGamepictureBox)).BeginInit();
+            this.SettingsButton = new Siticone.Desktop.UI.WinForms.SiticoneImageButton();
+            this.LoadButton = new Siticone.Desktop.UI.WinForms.SiticoneImageButton();
+            this.NewGameButton = new Siticone.Desktop.UI.WinForms.SiticoneImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.LogopictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NecoArcGifpictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BGpictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // SettingspictureBox
-            // 
-            this.SettingspictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.SettingspictureBox.Image = global::WindowsFormsApp1.Properties.Resources.Settings;
-            this.SettingspictureBox.Location = new System.Drawing.Point(903, 290);
-            this.SettingspictureBox.Name = "SettingspictureBox";
-            this.SettingspictureBox.Size = new System.Drawing.Size(347, 71);
-            this.SettingspictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SettingspictureBox.TabIndex = 5;
-            this.SettingspictureBox.TabStop = false;
-            this.SettingspictureBox.Click += new System.EventHandler(this.SettingspictureBox_Click);
-            // 
-            // LoadpictureBox
-            // 
-            this.LoadpictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.LoadpictureBox.Image = global::WindowsFormsApp1.Properties.Resources.Load;
-            this.LoadpictureBox.Location = new System.Drawing.Point(903, 213);
-            this.LoadpictureBox.Name = "LoadpictureBox";
-            this.LoadpictureBox.Size = new System.Drawing.Size(347, 71);
-            this.LoadpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LoadpictureBox.TabIndex = 4;
-            this.LoadpictureBox.TabStop = false;
-            // 
-            // NewGamepictureBox
-            // 
-            this.NewGamepictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.NewGamepictureBox.Image = global::WindowsFormsApp1.Properties.Resources.NewGame;
-            this.NewGamepictureBox.Location = new System.Drawing.Point(903, 135);
-            this.NewGamepictureBox.Name = "NewGamepictureBox";
-            this.NewGamepictureBox.Size = new System.Drawing.Size(347, 72);
-            this.NewGamepictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.NewGamepictureBox.TabIndex = 3;
-            this.NewGamepictureBox.TabStop = false;
             // 
             // LogopictureBox
             // 
@@ -99,6 +62,7 @@
             this.NecoArcGifpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.NecoArcGifpictureBox.TabIndex = 1;
             this.NecoArcGifpictureBox.TabStop = false;
+            this.NecoArcGifpictureBox.Click += new System.EventHandler(this.NecoArcGifpictureBox_Click);
             // 
             // BGpictureBox
             // 
@@ -115,19 +79,80 @@
             this.ExitButton.BackColor = System.Drawing.Color.Transparent;
             this.ExitButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.ExitButton.CheckedState.Parent = this.ExitButton;
-            this.ExitButton.HoverState.ImageSize = new System.Drawing.Size(192, 58);
+            this.ExitButton.HoverState.ImageSize = new System.Drawing.Size(153, 46);
             this.ExitButton.HoverState.Parent = this.ExitButton;
             this.ExitButton.Image = global::WindowsFormsApp1.Properties.Resources.Exit;
             this.ExitButton.ImageOffset = new System.Drawing.Point(0, 0);
             this.ExitButton.ImageRotate = 0F;
-            this.ExitButton.ImageSize = new System.Drawing.Size(241, 73);
-            this.ExitButton.Location = new System.Drawing.Point(903, 367);
+            this.ExitButton.ImageSize = new System.Drawing.Size(192, 58);
+            this.ExitButton.Location = new System.Drawing.Point(746, 430);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.ExitButton.PressedState.Parent = this.ExitButton;
             this.ExitButton.ShadowDecoration.Parent = this.ExitButton;
-            this.ExitButton.Size = new System.Drawing.Size(347, 78);
+            this.ExitButton.Size = new System.Drawing.Size(402, 98);
             this.ExitButton.TabIndex = 6;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // SettingsButton
+            // 
+            this.SettingsButton.BackColor = System.Drawing.Color.Transparent;
+            this.SettingsButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.SettingsButton.CheckedState.Parent = this.SettingsButton;
+            this.SettingsButton.HoverState.ImageSize = new System.Drawing.Size(224, 57);
+            this.SettingsButton.HoverState.Parent = this.SettingsButton;
+            this.SettingsButton.Image = global::WindowsFormsApp1.Properties.Resources.Settings;
+            this.SettingsButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.SettingsButton.ImageRotate = 0F;
+            this.SettingsButton.ImageSize = new System.Drawing.Size(280, 61);
+            this.SettingsButton.Location = new System.Drawing.Point(797, 352);
+            this.SettingsButton.Name = "SettingsButton";
+            this.SettingsButton.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.SettingsButton.PressedState.Parent = this.SettingsButton;
+            this.SettingsButton.ShadowDecoration.Parent = this.SettingsButton;
+            this.SettingsButton.Size = new System.Drawing.Size(402, 87);
+            this.SettingsButton.TabIndex = 7;
+            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
+            // 
+            // LoadButton
+            // 
+            this.LoadButton.BackColor = System.Drawing.Color.Transparent;
+            this.LoadButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.LoadButton.CheckedState.Parent = this.LoadButton;
+            this.LoadButton.HoverState.ImageSize = new System.Drawing.Size(225, 51);
+            this.LoadButton.HoverState.Parent = this.LoadButton;
+            this.LoadButton.Image = global::WindowsFormsApp1.Properties.Resources.Load;
+            this.LoadButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.LoadButton.ImageRotate = 0F;
+            this.LoadButton.ImageSize = new System.Drawing.Size(282, 63);
+            this.LoadButton.Location = new System.Drawing.Point(770, 256);
+            this.LoadButton.Name = "LoadButton";
+            this.LoadButton.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.LoadButton.PressedState.Parent = this.LoadButton;
+            this.LoadButton.ShadowDecoration.Parent = this.LoadButton;
+            this.LoadButton.Size = new System.Drawing.Size(444, 90);
+            this.LoadButton.TabIndex = 8;
+            this.LoadButton.Click += new System.EventHandler(this.LoadButton_Click);
+            // 
+            // NewGameButton
+            // 
+            this.NewGameButton.BackColor = System.Drawing.Color.Transparent;
+            this.NewGameButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.NewGameButton.CheckedState.Parent = this.NewGameButton;
+            this.NewGameButton.HoverState.ImageSize = new System.Drawing.Size(240, 48);
+            this.NewGameButton.HoverState.Parent = this.NewGameButton;
+            this.NewGameButton.Image = global::WindowsFormsApp1.Properties.Resources.NewGame;
+            this.NewGameButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.NewGameButton.ImageRotate = 0F;
+            this.NewGameButton.ImageSize = new System.Drawing.Size(300, 60);
+            this.NewGameButton.Location = new System.Drawing.Point(783, 143);
+            this.NewGameButton.Name = "NewGameButton";
+            this.NewGameButton.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.NewGameButton.PressedState.Parent = this.NewGameButton;
+            this.NewGameButton.ShadowDecoration.Parent = this.NewGameButton;
+            this.NewGameButton.Size = new System.Drawing.Size(444, 107);
+            this.NewGameButton.TabIndex = 9;
+            this.NewGameButton.Click += new System.EventHandler(this.NewGameButton_Click);
             // 
             // MainMenuForm
             // 
@@ -136,10 +161,10 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.ControlBox = false;
+            this.Controls.Add(this.NewGameButton);
+            this.Controls.Add(this.LoadButton);
+            this.Controls.Add(this.SettingsButton);
             this.Controls.Add(this.ExitButton);
-            this.Controls.Add(this.SettingspictureBox);
-            this.Controls.Add(this.LoadpictureBox);
-            this.Controls.Add(this.NewGamepictureBox);
             this.Controls.Add(this.LogopictureBox);
             this.Controls.Add(this.NecoArcGifpictureBox);
             this.Controls.Add(this.BGpictureBox);
@@ -147,9 +172,6 @@
             this.Name = "MainMenuForm";
             this.Text = "Defence Of The Burenya 2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainMenuForm_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.SettingspictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LoadpictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NewGamepictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogopictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NecoArcGifpictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BGpictureBox)).EndInit();
@@ -161,10 +183,10 @@
 
         private System.Windows.Forms.PictureBox BGpictureBox;
         private System.Windows.Forms.PictureBox NecoArcGifpictureBox;
-        private System.Windows.Forms.PictureBox SettingspictureBox;
-        private System.Windows.Forms.PictureBox LoadpictureBox;
-        private System.Windows.Forms.PictureBox NewGamepictureBox;
         private System.Windows.Forms.PictureBox LogopictureBox;
         private Siticone.Desktop.UI.WinForms.SiticoneImageButton ExitButton;
+        private Siticone.Desktop.UI.WinForms.SiticoneImageButton SettingsButton;
+        private Siticone.Desktop.UI.WinForms.SiticoneImageButton LoadButton;
+        private Siticone.Desktop.UI.WinForms.SiticoneImageButton NewGameButton;
     }
 }

@@ -31,5 +31,10 @@ namespace WindowsFormsApp1.Misc
             formToShow.Show();
             NowOnScreen = formToShow;
         }
+
+        public static void CloseAll()
+        {
+            
+        }
     }
 }
