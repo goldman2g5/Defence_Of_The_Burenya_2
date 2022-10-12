@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsApp1.Forms
+﻿using System.Windows.Forms;
+
+namespace WindowsFormsApp1.Forms
 {
     partial class DiologScene
     {
@@ -30,7 +32,9 @@
         {
             this.BGpictureBox = new System.Windows.Forms.PictureBox();
             this.GradientPanel = new Siticone.Desktop.UI.WinForms.SiticoneGradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BGpictureBox)).BeginInit();
+            this.GradientPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // BGpictureBox
@@ -46,15 +50,29 @@
             // GradientPanel
             // 
             this.GradientPanel.BackColor = System.Drawing.Color.Transparent;
+            this.GradientPanel.Controls.Add(this.label1);
             this.GradientPanel.FillColor = System.Drawing.Color.Black;
             this.GradientPanel.FillColor2 = System.Drawing.Color.Transparent;
             this.GradientPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.GradientPanel.Location = new System.Drawing.Point(1, 391);
             this.GradientPanel.Name = "GradientPanel";
+            this.GradientPanel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.GradientPanel.ShadowDecoration.Parent = this.GradientPanel;
             this.GradientPanel.Size = new System.Drawing.Size(1270, 283);
             this.GradientPanel.TabIndex = 2;
             this.GradientPanel.UseTransparentBackground = true;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(44, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1170, 164);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "ХУУУУЙ";
+            this.label1.UseMnemonic = false;
             // 
             // DiologScene
             // 
@@ -66,6 +84,7 @@
             this.Name = "DiologScene";
             this.Text = "DiologScene";
             ((System.ComponentModel.ISupportInitialize)(this.BGpictureBox)).EndInit();
+            this.GradientPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -74,5 +93,6 @@
 
         private System.Windows.Forms.PictureBox BGpictureBox;
         private Siticone.Desktop.UI.WinForms.SiticoneGradientPanel GradientPanel;
+        private Label label1;
     }
 }
